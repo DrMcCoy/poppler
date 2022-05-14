@@ -2042,7 +2042,6 @@ bool Annot::isVisible(bool printing)
 {
     // check the flags
     if ((flags & flagHidden) || (printing && !(flags & flagPrint)) || (!printing && (flags & flagNoView))) {
-        return false;
     }
 
     // check the OC
